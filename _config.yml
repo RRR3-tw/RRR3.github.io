@@ -1,7 +1,7 @@
 # General settings
 lang: zh-TW
-title: "Starter Kit"
-description: "Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress."
+title: "RRR3的儲物堆"
+description: "充滿關於AI聊天的東西"
 tagline: "Change tagline in _config.yml"
 keywords: []
 logo: /assets/img/logo.png
@@ -35,7 +35,7 @@ paginate_path: /:num/
 remote_theme: hydecorp/hydejack@v9
 
 # Customizaton
-accent_image: /assets/img/sidebar-bg.jpg
+accent_image: /assets/img/12311.png
 accent_color: rgb(79,177,186)
 theme_color: rgb(25,55,71)
 
