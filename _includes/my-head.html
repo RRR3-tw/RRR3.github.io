@@ -1,19 +1,20 @@
 <style>
-  /* 只有在電腦大螢幕時，才啟動削骨手術 */
+  /* 只有在電腦版大螢幕才發動縮小，不影響手機版 */
   @media (min-width: 900px) {
-    :root {
-      /* 這裡是靈魂！數字越小，側邊欄就越窄。原本大概是 22rem 左右 */
-      --sidebar-width: 15rem !important; 
+    /* 1. 把側邊欄強行壓扁到 14rem（這數字你可以自己調，預設是快 25） */
+    hy-drawer {
+      width: 14rem !important;
     }
     
-    /* 強制側邊欄聽話 */
-    hy-drawer, #sidebar {
-      width: var(--sidebar-width) !important;
+    /* 2. 警告文章內容：給我往右邊退 14rem，不准被牆壁壓到！ */
+    hy-push-state {
+      margin-left: 14rem !important;
     }
-    
-    /* 讓右邊的文章內容往左靠，填補空出來的位子 */
-    #main, .content {
-      margin-left: var(--sidebar-width) !important;
+
+    /* 3. 順便把裡面那個大頭貼縮小一點，免得牆壁變窄後頭像塞不下 */
+    .sidebar-header img {
+      width: 5rem !important;
+      height: 5rem !important;
     }
   }
 </style>
