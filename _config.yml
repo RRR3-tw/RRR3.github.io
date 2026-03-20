@@ -1,8 +1,8 @@
 # General settings
 lang: zh-TW
 title: "RRR3的儲物堆"
-description: "充滿關於AI聊天的東西"
-tagline: "Change tagline in _config.yml"
+description: "RRR3，AI聊天相關的雜物堆。"
+tagline: "充滿關於AI聊天的東西"
 keywords: []
 logo: /assets/img/logo.png
 
