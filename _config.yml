@@ -11,7 +11,7 @@ author:
   email: 
 
 menu:
-- title: 角色秘密或背景
+  - title: 角色秘密或背景
     url: /projects/
   - title: Documentation
     url: /docs/
