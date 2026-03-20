@@ -2,9 +2,9 @@
 lang: zh-TW
 title: "RRR3的儲物堆"
 description: "RRR3，AI聊天相關的雜物堆。"
-tagline: "充滿關於AI聊天的東西"
+tagline: "放了點東西，抒發用，大概！"
 keywords: []
-logo: /assets/img/logo.png
+logo: /assets/img/AIlogo-Photoroom.png
 
 author:
   name: 
@@ -35,7 +35,7 @@ paginate_path: /:num/
 remote_theme: hydecorp/hydejack@v9
 
 # Customizaton
-accent_image: /assets/img/12311.png
+accent_image: /assets/img/banneer.png
 accent_color: rgb(79,177,186)
 theme_color: rgb(25,55,71)
 
