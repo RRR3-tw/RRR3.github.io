@@ -1,4 +1,5 @@
 ---
+
   root_font_size: 15 #px
   root_font_size_medium: 16 #px
   root_font_size_large: 17 #px
@@ -15,7 +16,7 @@
   content_width_2: 48 #rem
   content_width_5: 54 #rem
 
-  sidebar_width: 21 #rem
+  sidebar_width: 16 #rem
   border_radius: 0.5 #rem
 
   break_point_1: 42 #em
