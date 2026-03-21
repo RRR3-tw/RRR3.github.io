@@ -1,6 +1,7 @@
 ---
-layout: projects
-title: "方塊"
+layout: page
+title: "角色秘密或背景"
+permalink: /projects/
 ---
 
-方。
+故事故事blabla
