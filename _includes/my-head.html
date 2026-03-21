@@ -1,20 +1,27 @@
 <style>
-  /* 只有在電腦版大螢幕才發動縮小，不影響手機版 */
+  /* 只有在電腦版大螢幕才啟動，保護手機版排版 */
   @media (min-width: 900px) {
-    /* 1. 把側邊欄強行壓扁到 14rem（這數字你可以自己調，預設是快 25） */
-    hy-drawer {
-      width: 14rem !important;
+    
+    /* 1. 綁架側邊欄：強制壓扁到 16rem (原本大概 25rem) */
+    hy-drawer, #sidebar {
+      width: 16rem !important;
+      max-width: 16rem !important;
     }
     
-    /* 2. 警告文章內容：給我往右邊退 14rem，不准被牆壁壓到！ */
-    hy-push-state {
-      margin-left: 14rem !important;
+    /* 2. 綁架文章區塊：強迫它永遠跟側邊欄保持 16rem 的安全距離，絕對不准重疊！ */
+    hy-push-state, #main {
+      margin-left: 16rem !important;
     }
 
-    /* 3. 順便把裡面那個大頭貼縮小一點，免得牆壁變窄後頭像塞不下 */
-    .sidebar-header img {
-      width: 5rem !important;
-      height: 5rem !important;
+    /* 3. 視覺微調：把裡面那個大大的「RRR3的儲物堆」字體縮小，看起來更精緻 */
+    .sidebar-title {
+      font-size: 1.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    /* 4. 視覺微調：把下面的副標題也縮小一點 */
+    .sidebar-tagline {
+      font-size: 0.85rem !important;
     }
   }
 </style>
