@@ -1,3 +1,28 @@
 <style>
-  :root { --sidebar-width: 14rem !important; }
+  @media (min-width: 900px) {
+    /* 1. 牆壁強制縮小，而且「絕對不准」被內容撐開 */
+    hy-drawer, #sidebar {
+      width: 14rem !important;
+      max-width: 14rem !important;
+      overflow-x: hidden !important; /* 關鍵！裡面的東西再大也不准撐爆牆壁 */
+    }
+    
+    /* 2. 文章往右退，填補空位 */
+    hy-push-state, #main {
+      margin-left: 14rem !important;
+    }
+
+    /* 3. 把鋼筋打碎：強制縮小標題字，並允許斷行 */
+    .sidebar-title {
+      font-size: 1.2rem !important; /* 字體縮小 */
+      white-space: normal !important; 
+      word-break: break-all !important; /* 如果字太長，強制換行，不准撐開 */
+    }
+
+    /* 4. 把路霸壓扁：強制縮小大頭貼 */
+    .sidebar-header img {
+      max-width: 5rem !important;
+      height: auto !important;
+    }
+  }
 </style>
